@@ -16,7 +16,7 @@ const CartState = ({children}) => {
     }
 
     const deleteItem = id => {
-        dispatch({type: DELETE_ITEM, id})
+        dispatch({type: DELETE_ITEM, payload: id})
     }
 
     const increment = id => {

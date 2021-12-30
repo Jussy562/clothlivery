@@ -24,7 +24,7 @@ const CartReducer = (state, action) => {
              
 
             const searchCart = state.cartItem.find(item => item.id === action.payload.id );
-            console.log(searchCart, 'action.id')
+            
             return searchCart ? state : {
                 ...state,
                 cartItem: [...state.cartItem, action.payload],
@@ -40,21 +40,24 @@ const CartReducer = (state, action) => {
             return {
                 ...state,
                 cartItem: state.cartItem.filter(item => item.id 
-                !== action.payload),
+                !== action.payload.id),
 
             
             };
         }
 
         case INCREMENT: {
-            const qtyy = state.cartItem.find(item => item.id === action.payload.id );
+            // const qtyy = state.cartItem.find(item => item.id === action.payload.id );
           
-
-            return qtyy?  {
+            console.log(action.payload.id, 'action');
+            return {
                 ...state,
-                cartItem: [...state.cartItem, cartItem.qty += 1]
-             
-              } : state;
+                cartItem: state.cartItem.find(product =>
+                  product.id === action.payload.id
+                    ? {...product, quantity: product.quantity + 1}
+                    : product,
+                ),
+              };
 
               
             // return searchCart?  {
