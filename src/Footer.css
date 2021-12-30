@@ -1,0 +1,98 @@
+/*The footer*/
+.Foot {
+    display: flex;
+    width: 100% !important;
+    height: 20rem !important;
+    margin: 0 !important;
+    padding: 6rem 3rem !important;
+    background-color: rgb(4, 53, 68) !important;
+  
+  }
+  .Footer {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: auto !important;
+    color: white !important;
+    
+  }
+  .About {
+    padding: 0 0.9rem 0 0 !important;
+  }
+  
+  .FootLogo {
+    color: #f03800 !important;
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    font-family: sora, sans-serif !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .FootLogo span {
+    color: white !important;
+    
+  }
+  
+  .About p {
+    font-size: 0.8rem !important;
+    font-weight: 300 !important;
+    font-family: sora, sans-serif !important;
+    color: rgb(212, 212, 212) !important;
+  }
+  
+  .MenuLink {
+    padding: 0 0.9rem !important;
+  }
+  .MenuLink h4 {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    font-family: sora, sans-serif !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .MenuLink p {
+    font-size: 0.8rem !important;
+    font-weight: 300 !important;
+    font-family: sora, sans-serif !important;
+    color: rgb(212, 212, 212) !important;
+  }
+  
+  .contact {
+    padding: 0 0.9rem !important;
+  }
+  .contact h4 {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    font-family: sora, sans-serif !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .contact p {
+    font-size: 0.8rem !important;
+    font-weight: 300 !important;
+    font-family: sora, sans-serif !important;
+    color: rgb(212, 212, 212) !important;
+  }
+  
+  .Konet {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    font-family: sora, sans-serif !important;
+  }
+  
+  .Konet {
+    padding: 0 0 0 0.9rem !important;
+  }
+  
+  .Konet h4 {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    font-family: sora, sans-serif !important;
+    margin-bottom: 1rem !important;
+  }
+  .Konet p {
+    font-size: 0.8rem !important;
+    font-weight: 300 !important;
+    font-family: sora, sans-serif !important;
+    color: rgb(212, 212, 212) !important;
+  }

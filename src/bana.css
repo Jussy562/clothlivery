@@ -1,0 +1,75 @@
+.MyBana {
+    display: flex;
+    flex-direction: row;
+    height: auto !important;
+    background-color: rgb(4, 53, 68);
+    padding: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .heroTextPlate {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center !important;
+  }
+  
+  .heroText {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    color: white; 
+  }
+  
+  .heroText h1 {
+    color: #f03800;
+    font-size: 4rem !important;
+    font-weight: 500;
+    font-family: 'Sora', sans-serif !important;
+  }
+  
+  .heroText h1 span {
+    color: white !important;
+  }
+  
+  .heroText h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: Sora, sans-serif !important;
+  }
+  
+  .heroText p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #f03800;
+    font-family: Sora, sans-serif !important;
+  }
+  
+  
+  .heroImg {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+  
+  .heroImg img {
+    height: 100%;
+  }
+  
+
+  @media only screen and (max-width: 992px) {
+    .MyBana {
+        display: flex;
+        flex-direction: column-reverse !important;
+        height: auto !important;
+        background-color: rgb(4, 53, 68);
+        padding: 3rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+   
+  }

@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+.api {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  color: black;
+}
+
+.navBar{
+  position: fixed !important;
+  width: 100% !important;
+  background-color: rgb(4, 53, 68) !important;
+  color: whitesmoke !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.bar {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.logo {
+  color: #f03800 !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  font-family: Sora, sans-serif !important;
+
+}
+
+.Menu {
+  color: whitesmoke !important;
+  font-family: 'Sora', sans-serif !important;
+}
+
+.Menu.Active, .Menu:hover {
+  color: #f03800 !important;
+}
+
+.headerCart {
+  position: relative;
+  color: white !important
+}
+
+.headerCount {
+  position: absolute;
+  font-size: 0.8rem !important;
+  color: red !important;
+  top: 1.5rem !important;
+ 
+  right: 3.5rem !important;
+}
+
+.logo span {
+  color: white !important;
+}
+
+
+
+
+
+.comp {
+  color:yellow;
+}
 .App {
   text-align: center;
 }

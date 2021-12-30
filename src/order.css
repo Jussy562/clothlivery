@@ -1,0 +1,273 @@
+
+.Orderform {
+    
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: white !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 3px 10px 8px -6px rgba(102,102,102,0.45);
+-webkit-box-shadow: 3px 10px 8px -6px rgba(102,102,102,0.45);
+-moz-box-shadow: 3px 10px 8px -6px rgba(102,102,102,0.45);
+}
+
+
+
+.Ordertab {
+    width: 100% !important;
+    height: 3rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(4, 53, 68) !important;
+    padding: 1.5rem !important;
+    color: white !important;
+    font-family: Sora, sans-serif !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.Ordertab p {
+    padding: 0 !important;
+    margin: 0!important;
+    font-size: 0.8rem !important;
+}
+
+.Orderinfo {
+    width: 100% !important;
+    padding: 1.5rem !important;
+}
+
+.listOfItem li {
+    list-style: none !important;
+}
+
+.Orderbtn {
+    width: 100% !important;
+}
+
+.btn {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.btn p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.8rem !important;
+}
+
+.greater {
+    font-size: 0.8rem !important;
+}
+
+.orderDetails {
+    
+
+    display: grid !important;
+    grid-template-columns: 1fr 3fr 1fr !important;
+    column-gap: 0.5rem !important;
+}
+
+.orderImage {
+    background: none;
+    width: 100%  !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem !important;
+}
+
+.cartImage {
+    width: 100% !important;
+}
+
+
+
+/* .itemSelect {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+} */
+
+.itemsDesc {
+    width: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.descript1 {
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    font-family: Sora, sans-serif !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.selectors {
+    width: 6rem !important;
+    height: 2rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0.1rem whitesmoke solid !important;
+}
+
+.qValue {
+    width: auto !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    border: none !important;
+    padding: 0.8rem !important;
+}
+
+.quantity {
+   
+    margin: 0 !important;
+    font-size: 0.8rem !important;
+}
+
+.selectPad {
+    display: flex !important;
+}
+.reduceMe {
+    width: auto !important;
+    height: 100% !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.8rem !important;
+    margin: 0 !important;
+    font-size: 0.8rem !important;
+    box-sizing: border-box !important;
+}
+
+.reduceMe:hover {
+    cursor: pointer;
+    background: whitesmoke;
+}
+
+.reduceMe p {
+    margin: 0 !important;
+}
+
+.addMe {
+    width: auto !important;
+    height: 100% !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.8rem !important; 
+    margin: 0 !important;  
+    font-size: 0.8rem !important;
+    box-sizing: border-box !important;
+}
+
+.addMe p {
+    margin: 0 !important;
+}
+
+.addMe:hover {
+    cursor: pointer;
+    background: whitesmoke;
+}
+.descript2 {
+    font-size: 0.6rem !important;
+    font-weight: normal !important;
+    font-family: Sora, sans-serif !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.itemPrice {
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 0.8rem !important;
+}
+
+.amt {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.TotalPrice {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 0.5rem !important;
+    align-items: center !important;
+}
+.total {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.total h6 {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.82rem !important;
+    font-weight: 800 !important;
+}
+
+.totalamount {
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.8rem !important;
+}
+
+.totalamount p {
+    margin-bottom: 0 !important;
+}
+
+.dolar {
+    margin-right: 0.5rem !important;
+}
+
+.tPrice {
+    font-family: Sora, sans-serif !important;
+    font-weight: 800;
+}
+
+.delivPrice {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.delivtitle {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+.delivCheck {
+    color: #f03800 !important;
+    font-size: 1.5rem !important;
+    margin-right: 2px !important;
+    
+}
+
+.delivtitle p {
+    font-size: 0.8rem !important;
+    font-family: Sora, sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cartDel {
+    font-size: 20px !important;
+}
