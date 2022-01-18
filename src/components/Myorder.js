@@ -4,7 +4,7 @@ import CartContext from '../context/cart/CartContext';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 
 function Myorder({item}) {
-    const { increment, decrement, cartItem, deleteItem } = useContext(CartContext);
+    const { increment, decrement,  deleteItem } = useContext(CartContext);
     return (
         <div className='orderDetails'>
             
@@ -24,10 +24,10 @@ function Myorder({item}) {
                                         </div>
                                         {/* <div className='selectPad'> */}
                                             <div className="reduceMe">
-                                                <p onClick={() => decrement(item)} >-</p>
+                                                <p onClick={() => decrement(item.id)} >-</p>
                                             </div>
                                             <div className="addMe">
-                                                <p onClick={() => increment(item)} >+</p>
+                                                <p onClick={() => increment(item.id)} >+</p>
                                                 
                                             </div>
                                 
@@ -42,7 +42,7 @@ function Myorder({item}) {
                         </div>
                         <div className="itemPrice">
                                 <p className="amt">{item.price * item.qty}</p>
-                                <RiDeleteBin6Line onClick={() => deleteItem(item)} className='cartDel' />
+                                <RiDeleteBin6Line onClick={() => deleteItem(item.id)} className='cartDel' />
                         </div>
                         
                         

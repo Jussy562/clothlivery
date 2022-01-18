@@ -14,12 +14,12 @@ function ProductItems({item}) {
   
         <>
             <div>
-                <Col>
+                <Col >
                     <Card className="proCard">
                         <div className="imagePlate">
-                        <Card.Img variant="top" className="cardImage" src={item.image} onClick={handleShow} />
+                        <Card.Img variant="top" className="cardImage" src={item.image} alt='image' onClick={handleShow} />
                         </div>
-                        <div>
+                        <div className='cardinfopla'>
                             <Card.Body className="cardBody">
                                 <div className="proInfo">
                                     <Card.Title className="proName">{ item.name }</Card.Title>
@@ -49,7 +49,7 @@ function ProductItems({item}) {
         <Modal.Body className="modalBody">
           <div>
             <figure>
-                <img className="modalImage" src={item.image}/>
+                <img className="modalImage" alt='' src={item.image}/>
             </figure>
             <div>
                 <p>{item.name}</p>

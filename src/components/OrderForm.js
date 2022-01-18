@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import {Button} from 'react-bootstrap'
 import { FaGreaterThan } from 'react-icons/fa';
 import { CgRadioChecked } from 'react-icons/cg';
@@ -6,22 +6,17 @@ import CartContext from '../context/cart/CartContext';
 import Myorder from './Myorder';
 
 function OrderForm() {
-    const { cartItem, DELETE_ITEM, INCREMENT, DECREMENT } = useContext(CartContext);
-    // const [price, setPrice] = useState(0);
-    // const priceCount = (a, b) => {
-    //     return (
-    //         a*b
-    //     );
-            
+    const { cartItem } = useContext(CartContext);
     
-    // }
-
-    // setPrice(cartItem.qty, cartItem.price);
+    
+    
    
  
     return (
+       
    
       <div>
+           
             <div className="Orderform">
             <div className="Ordertab">
                 <p>Order Summary</p>
@@ -30,16 +25,20 @@ function OrderForm() {
                 <div >
                     <ul className='listOfItem'>
                         <li>
-                            { cartItem.length == 0 ? (
+                            { cartItem.length === 0 ? (
                                     <div className='empty'>
                                         <div>
                                             <h1>EMPTY</h1>
                                         </div>
+                                        
                                     </div>
+                                    
                                 ) : ( <div>
                                     { cartItem.map( item => (
                                         <Myorder key={item.id} item={item} />
+                                        
                                     ))}
+                                    
                                     </div>
                                 )
                             }
@@ -57,7 +56,7 @@ function OrderForm() {
                         <p>Delivery</p>
                     </div>
                     <div className="totalamount">
-                        <p className="dolar">$</p><p>0.00</p>
+                        <p className="dolar">$ 10.00</p>
                     </div>
                 </div>
                 <hr/>

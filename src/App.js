@@ -1,11 +1,10 @@
-import react, {useState} from 'react'
+import React from 'react'
 import './App.css';
 import './Footer.css';
 import './ShopVila.css';
 import './order.css';
 import './bana.css';
 import './bootstrap.min.css';
-import moimoi from './moimoi.jpg';
 import Header from './components/Header';
 import MyBanner from './components/MyBanner';
 import MyFooter from './components/MyFooter';

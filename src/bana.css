@@ -13,7 +13,7 @@
   .heroTextPlate {
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center !important;
   }
   
@@ -65,11 +65,41 @@
         flex-direction: column-reverse !important;
         height: auto !important;
         background-color: rgb(4, 53, 68);
-        padding: 3rem;
+        padding: 2rem;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       
       }
+
+      .heroImg {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-left: 2rem !important ;
+      }
    
   }
+
+  @media only screen and (max-width: 768px) {
+    .MyBana {
+        display: flex;
+        flex-direction: column-reverse !important;
+        height: auto !important;
+        background-color: rgb(4, 53, 68);
+        padding: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+
+      .heroImg {
+        display: none !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-left: 3rem !important ;
+      }
+   
+  }
+

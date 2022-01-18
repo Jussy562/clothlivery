@@ -7,6 +7,7 @@ const CartState = ({children}) => {
 
     const initialState = {
         cartItem: [],
+        totalPrice: 0,
     }
 
     const [state, dispatch] = useReducer(CartReducer, initialState);
@@ -16,15 +17,15 @@ const CartState = ({children}) => {
     }
 
     const deleteItem = id => {
-        dispatch({type: DELETE_ITEM, payload: id})
+        dispatch({type: DELETE_ITEM, id})
     }
 
     const increment = id => {
-        dispatch({type: INCREMENT, payload: id})
+        dispatch({type: INCREMENT, id})
     }
 
     const decrement = id => {
-        dispatch({type: DECREMENT, payload: id})
+        dispatch({type: DECREMENT, id})
     }
     return (
         <CartContext.Provider value={{

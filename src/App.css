@@ -17,6 +17,7 @@
   padding-right: 3rem !important;
 }
 .bar {
+  width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   display: flex !important;
@@ -42,7 +43,8 @@
 
 .headerCart {
   position: relative;
-  color: white !important
+  color: white !important;
+  font-size: 1.5rem !important;
 }
 
 .headerCount {
@@ -54,7 +56,29 @@
   right: 3.5rem !important;
 }
 
-.logo span {
+@media only screen and (max-width: 992px){
+  .navBar{
+    position: fixed !important;
+    width: 100% !important;
+    background-color: rgb(4, 53, 68) !important;
+    color: whitesmoke !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 678px){
+  .navBar{
+    position: fixed !important;
+    width: 100% !important;
+    background-color: rgb(4, 53, 68) !important;
+    color: whitesmoke !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* .logo span {
   color: white !important;
 }
 
@@ -102,4 +126,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

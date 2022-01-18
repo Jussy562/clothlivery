@@ -5,22 +5,7 @@ const CartReducer = (state, action) => {
     switch(action.type) {
         case ADD_TO_CART: {
 
-            // return {
-            //     ...state,
-            //     products: state.cartItem.map(product =>
-            //       product.id === action.id ? {...product} : product,
-            //     ),
-            //   };
-            
-
-            // return {
-            //     ...state,
-            //     cartItem: state.cartItem.map(item =>
-            //       item.id === action.id ? {...item } : item,
-            //     ),
-            //   };
-              
-            // const searchCart = state.cartItem.find(item => item.id !== action.id);
+           
              
 
             const searchCart = state.cartItem.find(item => item.id === action.payload.id );
@@ -28,19 +13,16 @@ const CartReducer = (state, action) => {
             return searchCart ? state : {
                 ...state,
                 cartItem: [...state.cartItem, action.payload],
+                totalPrice: state.totalPrice + action.payload.price,
             };
             
-            // return {
-                
-            //     ...state,
-            //     cartItem: [...state.cartItem, action.payload]
-            // }
+          
         }
         case DELETE_ITEM: {
             return {
                 ...state,
                 cartItem: state.cartItem.filter(item => item.id 
-                !== action.payload.id),
+                !== action.id),
 
             
             };
@@ -48,48 +30,49 @@ const CartReducer = (state, action) => {
 
         case INCREMENT: {
             // const qtyy = state.cartItem.find(item => item.id === action.payload.id );
-          
-            console.log(action.payload.id, 'action');
-            return {
+            
+            
+            // const product = state.cartItem.find(item => item.id === action.id);
+            // console.log(action.id);
+            // const count = state.cartItem.find(item => item.id === action.id ? 
+
+            //     {...item, name: item.name = 'blue'} : item);
+            //     console.log(count.name);
+
+                // {...item, qty: item.qty += 1} : item);
+                // console.log(count.qty);
+                
+                
+                // {...item, name: item.name= "blue"}               
+            const count = state.cartItem.find(item => item.id === action.id);
+            return count ? {
                 ...state,
-                cartItem: state.cartItem.find(product =>
-                  product.id === action.payload.id
-                    ? {...product, quantity: product.quantity + 1}
-                    : product,
-                ),
-              };
+                cartItem:  state.cartItem.map(items => items.id === action.id ? 
+                    {...items,
+                    qty: items.qty + 1,
+                     
+                    } : items),
+                     
+              } : state;
 
               
-            // return searchCart?  {
-            //     ...state,
-            //     cartItem: state.cartItem.find(item =>
-            //       item.id === action.payload.id
-            //         ? {...item, qty: item.qty + 1}
-            //         : item,
-            //     ),
-            //   };
-            
-            // return {
-            //     ...state,
-                
-            //     cartItem: state.cartItem.qty + 1,
-               
-            // }
+              
+
+              
+      
         }
 
         case DECREMENT: {
-            return {
-
+            const count = state.cartItem.find(item => item.id === action.id);
+            return count ? {
                 ...state,
-                items: state.items.map(item =>
-                item.id === action.id
-                    ? {...item,
-                        qty: item.quantity !== 1 ? item.quantity - 1 : 1, }
-                : item,
-        ),
-                // ...state,
-                // cartItem: state.cartItem.qty - 1
-            }
+                cartItem:  state.cartItem.map(items => items.id === action.id ? 
+                    {...items,
+                    qty: items.qty > 1 ? items.qty - 1 : 1,
+                     
+                    } : items),
+                     
+              } : state;
         }
 
         default:

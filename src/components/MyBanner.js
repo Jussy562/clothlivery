@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Button, Row, Col} from 'react-bootstrap'
+import { Col} from 'react-bootstrap'
 
 function MyBanner() {
     return (
@@ -16,7 +16,7 @@ function MyBanner() {
 
             <Col sm={12} md={6} >
                 <div className="heroImg" >
-                    <img src={'/clothe/shopping.png'} />
+                    <img src={'/clothe/shopping.png'} alt='produc' />
                 </div>
             </Col>
            

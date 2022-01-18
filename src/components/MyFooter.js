@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Col, Row} from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 
 function MyFooter() {
     return (
@@ -15,10 +15,10 @@ function MyFooter() {
                 </Col>
                 <Col sm={12} md={2} className="MenuLink" >
                     <h4>Menu Links</h4>
-                    <p><a>Home</a></p>
-                    <p><a>Shop</a></p>
-                    <p><a>Contact</a></p>
-                    <p><a>FAQ</a></p>
+                    <p><a href="google.com">Home</a></p>
+                    <p><a href="google.com">Shop</a></p>
+                    <p><a href="google.com">Contact</a></p>
+                    <p><a href="google.com">FAQ</a></p>
                     
                 </Col>
                 <Col sm={12} md={3} className="contact" >

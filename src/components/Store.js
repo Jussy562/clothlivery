@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import { Col } from 'react-bootstrap'
+import React, { useState } from 'react';
 import ProductItems from './ProductItems';
-import product from '../product'
-import {Dropdown} from 'react-bootstrap'
+import product from '../product';
+import {Dropdown} from 'react-bootstrap';
 import { RiSearchLine } from 'react-icons/ri';
 import { RiCloseLine } from 'react-icons/ri';
 
@@ -58,7 +57,7 @@ function Store() {
                 </div>
             </div>
 
-            <div className="store">
+            <div  className="store">
 
                 {
                     productSearch.map((item) => (
