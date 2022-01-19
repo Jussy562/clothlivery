@@ -24,14 +24,16 @@ function Store() {
     });
   
     return (
-        <div className='provila'>
-            <div className="FilterPlate">
-                <div className="Filter">
+        <div  className='col-12 col-sm-12 col-md-8 col-lg-7 '>
+            <div className="FilterPlate row">
+                <div className="Filter ">
                     <p>Filters</p>
                     <p>Reset filters</p>
                 </div>
-                <div className="FilterSearch">
-                    <Dropdown className="SelectOption">
+                <div className="FilterSearch p-0 ">
+                <div className='col-12 col-sm-5 '>
+                    <Dropdown className="SelectOption  ">
+                        
                         <Dropdown.Toggle className="defaultSelect"  id="dropdown-basic">
                             Show All
                         </Dropdown.Toggle>
@@ -41,9 +43,12 @@ function Store() {
                             <Dropdown.Item href="#/action-2">Men</Dropdown.Item>
                             <Dropdown.Item href="#/action-3">Women</Dropdown.Item>
                         </Dropdown.Menu>
-                    </Dropdown>
-
-                    <div className="search">
+                    </Dropdown> 
+                </div>
+                    
+                    
+                <div className='col-12 col-sm-5 '>
+                    <div className="search ">
                         <input className="inputArea"
                             type="text"
                             value = {filter}
@@ -55,15 +60,20 @@ function Store() {
 
                     </div>
                 </div>
+                    
+                </div>
             </div>
 
-            <div  className="store">
+            <div  className="store col-12 ">
+                <div className='row'>
+                    {
+                        productSearch.map((item) => (
+                            <ProductItems key={item.id} item={item}  /> 
+                        ))
+                    }
+                </div>
 
-                {
-                    productSearch.map((item) => (
-                        <ProductItems key={item.id} item={item}  /> 
-                    ))
-                }
+                
             </div>
 
 

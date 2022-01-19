@@ -18,7 +18,7 @@
   }
   .About {
     padding: 0 0.9rem 0 0 !important;
-    width: 20rem !important;
+    /* width: 20rem !important; */
   }
   
   .FootLogo {
@@ -38,12 +38,12 @@
     font-size: 0.8rem !important;
     font-weight: 300 !important;
     font-family: sora, sans-serif !important;
-    color: rgb(212, 212, 212) !important;
+    color: rgb(168, 169, 170) !important;
   }
   
   .MenuLink {
     padding: 0 0.9rem !important;
-    width: 20rem !important;
+    /* width: 20rem !important; */
   }
   .MenuLink h4 {
     font-size: 1.2rem !important;
@@ -57,11 +57,21 @@
     font-weight: 300 !important;
     font-family: sora, sans-serif !important;
     color: rgb(212, 212, 212) !important;
+    margin-bottom: 0 !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: rgb(168, 169, 170) !important;
+  }
+
+  a:hover {
+    color: #f03800 !important;
   }
   
   .contact {
     padding: 0 0.9rem !important;
-    width: 20rem !important;
+    /* width: 20rem !important; */
   }
   .contact h4 {
     font-size: 1.2rem !important;
@@ -74,14 +84,15 @@
     font-size: 0.8rem !important;
     font-weight: 300 !important;
     font-family: sora, sans-serif !important;
-    color: rgb(212, 212, 212) !important;
+    color: rgb(168, 169, 170) !important;
+    margin-bottom: 0 !important;
   }
   
   .Konet {
     font-size: 1.2rem !important;
     font-weight: 400 !important;
     font-family: sora, sans-serif !important;
-    width: 20rem !important;
+    /* width: 20rem !important; */
   }
   
   .Konet {
@@ -98,17 +109,17 @@
     font-size: 0.8rem !important;
     font-weight: 300 !important;
     font-family: sora, sans-serif !important;
-    color: rgb(212, 212, 212) !important;
+    color: rgb(168, 169, 170) !important;
   }
 
-  @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 768px) {
     .Footer {
       display: flex !important;
       flex-direction: column !important;
       width: 100% !important;
       height: auto !important;
       margin: 0 !important;
-      /* padding: 6rem 3rem !important; */
+    
       background-color: rgb(4, 53, 68) !important;
     
     }
@@ -125,19 +136,19 @@
 
     .MenuLink {
       padding: 0 !important;
-      width: 20rem !important;
+      
     }
 
     .contact {
       padding: 0 !important;
-      width: 20rem !important;
+      
     }
       
   .Konet {
     font-size: 1.2rem !important;
     font-weight: 400 !important;
     font-family: sora, sans-serif !important;
-    width: 20rem !important;
+    
     padding: 0 !important;
     margin-bottom: 0 !important;
     margin-left: 0 !important;
@@ -147,4 +158,4 @@
   .Konet p {
     margin-bottom: 0 !important;
   }
-  }
+  } 

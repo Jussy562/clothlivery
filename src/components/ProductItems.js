@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react'
-import { Col, Card, Button, Modal } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import { BsCart2 } from 'react-icons/bs';
 import CartContext from '../context/cart/CartContext';
 
@@ -13,29 +13,29 @@ function ProductItems({item}) {
     return (
   
         <>
-            <div>
-                <Col >
-                    <Card className="proCard">
-                        <div className="imagePlate">
-                        <Card.Img variant="top" className="cardImage" src={item.image} alt='image' onClick={handleShow} />
-                        </div>
-                        <div className='cardinfopla'>
-                            <Card.Body className="cardBody">
-                                <div className="proInfo">
-                                    <Card.Title className="proName">{ item.name }</Card.Title>
-                                    <Card.Text className="proPrice">
-                                        Price: {item.price}
-                                    </Card.Text>
-                                </div>
-                                <div className="procartbtn">
-
-                                    <BsCart2 className="cart2" onClick={() => addToCart(item)}/>
-                                </div>
-                            </Card.Body>
-                        </div>
-                    </Card>
-                </Col>
+            <div className='proCard col-12 col-md-6 col-lg-4 mb-0 py-2 '>
+                <div className='card p-cardz '>
+                      <img className='card-img-top card-Image'
+                      src={item.image} alt='imagephoto' onClick={handleShow} />
+                      <div className='card-body pro-details'>
+                          <h5 className='card-title'>
+                              
+                              {item.name}
+                          </h5>
+                          <p className='card-text'>
+                              Price: {item.price}
+                          </p>
+                          <p className='mb-0'>
+                              <BsCart2 className="cart2" onClick={() => addToCart(item)}/>
+                          </p>
+                      
+                      </div>
+                </div>
             </div>
+              
+                    
+              
+            
 
             <Modal
         show={show}

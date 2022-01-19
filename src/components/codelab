@@ -1,0 +1,43 @@
+                        <div className='col-md-4 mb-5'>
+                            <div className='card'>
+                                <img className='card-img-top'
+                                src={item.image} alt='imageblogpost' />
+                                <div className='card-body'>
+                                    <h5 className='card-title'>
+                                        
+                                        {item.name}
+                                    </h5>
+                                    <p className='card-text'>
+                                        Price: {item.price}
+                                    </p>
+                                    <p className='mb-0'>
+                                        <BsCart2 className="cart2" onClick={() => addToCart(item)}/>
+                                    </p>
+                                
+                                </div>
+                            </div>
+                        </div>
+
+
+
+  <Col >
+                    <Card className="proCard">
+                        <div className="imagePlate">
+                        <Card.Img variant="top" className="cardImage" src={item.image} alt='image' onClick={handleShow} />
+                        </div>
+                        <div className='cardinfopla'>
+                            <Card.Body className="cardBody">
+                                <div className="proInfo">
+                                    <Card.Title className="proName">{ item.name }</Card.Title>
+                                    <Card.Text className="proPrice">
+                                        Price: {item.price}
+                                    </Card.Text>
+                                </div>
+                                <div className="procartbtn">
+
+                                    <BsCart2 className="cart2" onClick={() => addToCart(item)}/>
+                                </div>
+                            </Card.Body>
+                        </div>
+                    </Card>
+                </Col>

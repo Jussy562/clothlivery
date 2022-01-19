@@ -15,72 +15,72 @@ function OrderForm() {
     return (
        
    
-      <div>
+        <div className='col-12 col-sm-12 col-md-4 col-lg-5' >
            
             <div className="Orderform">
-            <div className="Ordertab">
-                <p>Order Summary</p>
-            </div>
-            <div className="Orderinfo">
-                <div >
-                    <ul className='listOfItem'>
-                        <li>
-                            { cartItem.length === 0 ? (
-                                    <div className='empty'>
-                                        <div>
-                                            <h1>EMPTY</h1>
+                <div className="Ordertab">
+                    <p>Order Summary</p>
+                </div>
+                <div className="Orderinfo">
+                    <div >
+                        <ul className='listOfItem'>
+                            <li>
+                                { cartItem.length === 0 ? (
+                                        <div className='empty'>
+                                            <div>
+                                                <h1>EMPTY</h1>
+                                            </div>
+                                            
                                         </div>
                                         
-                                    </div>
-                                    
-                                ) : ( <div>
-                                    { cartItem.map( item => (
-                                        <Myorder key={item.id} item={item} />
+                                    ) : ( <div>
+                                        { cartItem.map( item => (
+                                            <Myorder key={item.id} item={item} />
+                                            
+                                        ))}
                                         
-                                    ))}
-                                    
-                                    </div>
-                                )
-                            }
-                        </li>
-                    </ul>
+                                        </div>
+                                    )
+                                }
+                            </li>
+                        </ul>
+                        
+
+                    </div>
+
                     
-
-                </div>
-
+                    <hr/>
+                    <div className="delivPrice" >
+                        <div className="delivtitle">
+                            <CgRadioChecked className="delivCheck" />
+                            <p>Delivery</p>
+                        </div>
+                        <div className="totalamount">
+                            <p className="dolar">$ 10.00</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div className="TotalPrice">
+                        <div className="total">
+                            <h6>TOTAL</h6>
+                        </div>
+                        <div className="totalamount">
+                            <p className="dolar tPrice">$</p><p className="tPrice">0.00</p>
+                        </div>
+                    </div>
+                    <div className="Orderbtn">
+                        <Button className="btn" variant="primary">
+                            <p>Check out</p>
+                            <FaGreaterThan className="greater" />
+                        </Button>
+                    </div>
                 
-                <hr/>
-                <div className="delivPrice" >
-                    <div className="delivtitle">
-                        <CgRadioChecked className="delivCheck" />
-                        <p>Delivery</p>
-                    </div>
-                    <div className="totalamount">
-                        <p className="dolar">$ 10.00</p>
-                    </div>
                 </div>
-                <hr/>
-                <div className="TotalPrice">
-                    <div className="total">
-                        <h6>TOTAL</h6>
-                    </div>
-                    <div className="totalamount">
-                        <p className="dolar tPrice">$</p><p className="tPrice">0.00</p>
-                    </div>
-                </div>
-                <div className="Orderbtn">
-                    <Button className="btn" variant="primary">
-                        <p>Check out</p>
-                        <FaGreaterThan className="greater" />
-                    </Button>
-                </div>
-            
+                
+                
             </div>
-            
-            
+        
         </div>
-       
-      </div>
 
         
     )

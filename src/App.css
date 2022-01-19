@@ -26,10 +26,14 @@
 
 .logo {
   color: #f03800 !important;
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   font-weight: bold !important;
   font-family: Sora, sans-serif !important;
 
+}
+
+.logo span {
+  color: white !important;
 }
 
 .Menu {

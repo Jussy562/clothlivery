@@ -1,56 +1,59 @@
-.Shoparena{
+/* .Shoparena{
     width: 100% !important;
+    height: auto !important;
     padding: 3rem !important;
-    display: grid !important;
-    grid-template-columns: 2fr 1fr !important;
-    column-gap: 1rem !important;
+    /* display: flex !important;
     
-    background: rgb(233, 232, 232) !important;
-}
+  
+} */
 
 .Provila {
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
     
+    
 }
 .store {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
+    /* display: flex !important; */
+    /* grid-template-columns: 1fr 1fr 1fr !important;
     grid-template-rows: 1fr 1fr !important;
     column-gap: 1rem !important;
-    row-gap: 1rem !important;
+    row-gap: 1rem !important;*/
     margin-top: 1rem !important;
+    
 }
 
 .proCard {
-    width: 100%  !important;
-    height: 30rem !important;
-    display: grid !important;
-    grid-template-rows: 3fr 1fr !important;
+    padding-top: 0 !important ;
+    height: auto !important;
+}
+
+.p-cardz {
+    
+    
+    background: rgb(233, 232, 232) !important;
     border-radius: 0.5rem !important;
     border: none !important;
     padding: 0 !important;
 }
 
-.proCard:hover {
+.p-cardz:hover {
     
     box-shadow: 0px 2px 6px 2px rgba(82,77,77,0.75);
 -webkit-box-shadow: 0px 2px 6px 2px rgba(82,77,77,0.75);
 -moz-box-shadow: 0px 2px 6px 2px rgba(82,77,77,0.75);
 }
 
-.imagePlate {
-    width: 100% !important;
-    height: 90% !important;
-    background: rgb(233, 232, 232) !important;;
-    border-radius: 0.5rem !important;
+.pro-details {
+    
+    background: white;
+    /* border-radius: 0.5rem !important; */
     border: none !important;
 }
 
-.cardImage {
-    width: 100% !important;
-    height: 100%  !important;
+.card-Image {
+    
     border-radius: 0.5rem !important;
 }
 
@@ -120,8 +123,8 @@
 
 
 .FilterPlate {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     padding: 2rem !important;
     background: white !important;
     border-radius: 0.5rem !important;
@@ -132,7 +135,7 @@
 }
 
 .Filter {
-    width: 100%;
+    
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -143,13 +146,13 @@
     width: 100%;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    justify-content: space-between !important; 
 }
 
 
-.SelectOption {
+/* .SelectOption {
     width: 47% !important;
-}
+} */
 
 .defaultSelect {
     width: 100% !important;
@@ -173,7 +176,7 @@
 }
 
 .search {
-    width: 47% !important;
+   
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
@@ -197,6 +200,10 @@
     border: none !important;
 }
 
+/* .p-card {
+    width: 100 !important;
+} */
+
 .searchClose {
     display: none !important;
 }
@@ -207,61 +214,27 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .store {
+    /* .store {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: 1fr 1fr !important;
         column-gap: 1rem !important;
         row-gap: 1rem !important;
         margin-top: 1rem !important;
-    }
+    } */
 
 }
 
 @media only screen and (max-width: 768px) {
-    .store {
+    /* .store {
         display: grid !important;
         grid-template-columns: 1fr!important;
         grid-template-rows: 1fr 1fr !important;
         column-gap: 1rem !important;
         row-gap: 1rem !important;
         margin-top: 1rem !important;
-    }
-    .Shoparena{
-        width: 100% !important;
-        padding: 3rem !important;
-        display: flex !important;
-        flex-direction: column !important;
-        /* grid-template-columns: 2fr 1fr !important;
-        column-gap: 1rem !important; */
-        
-        background: rgb(233, 232, 232) !important;
-    }
-
-    .Provila {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        margin-bottom: 1rem !important;
-        
-    }
-    .proCard {
-        height: 15rem !important;
-    }
-
-    .cardImage {
-        width: 100% !important;
-        height: 100%  !important;
-        border-radius: 0.5rem !important;
-    }
-
-    .cardBody {
-        height: auto !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        
-    }
+    } */
+ 
 
 }
 
