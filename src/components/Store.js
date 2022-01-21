@@ -22,6 +22,8 @@ function Store() {
             item[key].toString().toLowerCase().includes(filter.toString().toLocaleLowerCase())
             )
     });
+
+    
   
     return (
         <div  className='col-12 col-sm-12 col-md-8 col-lg-7 '>
@@ -30,8 +32,8 @@ function Store() {
                     <p>Filters</p>
                     <p>Reset filters</p>
                 </div>
-                <div className="FilterSearch p-0 ">
-                <div className='col-12 col-sm-5 '>
+                <div className="FilterSearch p-0 row">
+                <div className='col-12 col-sm-12 col-md-4 mb-2 mb-md-0 '>
                     <Dropdown className="SelectOption  ">
                         
                         <Dropdown.Toggle className="defaultSelect"  id="dropdown-basic">
@@ -47,7 +49,7 @@ function Store() {
                 </div>
                     
                     
-                <div className='col-12 col-sm-5 '>
+                <div className='col-12 col-sm-12 col-md-5 '>
                     <div className="search ">
                         <input className="inputArea"
                             type="text"

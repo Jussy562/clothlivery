@@ -1,11 +1,12 @@
-/* .Shoparena{
-    width: 100% !important;
+.Shoparena{
+    /* width: 100% !important;
     height: auto !important;
     padding: 3rem !important;
-    /* display: flex !important;
+    display: flex !important; */
+    background: rgb(233, 232, 232) !important;
     
   
-} */
+}
 
 .Provila {
     width: 100% !important;
@@ -22,6 +23,8 @@
     row-gap: 1rem !important;*/
     margin-top: 1rem !important;
     
+
+    
 }
 
 .proCard {
@@ -32,7 +35,7 @@
 .p-cardz {
     
     
-    background: rgb(233, 232, 232) !important;
+    background: none !important;
     border-radius: 0.5rem !important;
     border: none !important;
     padding: 0 !important;
