@@ -1,14 +1,20 @@
-import React, { useContext } from 'react'
-import {Button} from 'react-bootstrap'
+import React, { useContext } from 'react';
+import {Button} from 'react-bootstrap';
 import { FaGreaterThan } from 'react-icons/fa';
 import { CgRadioChecked } from 'react-icons/cg';
 import CartContext from '../context/cart/CartContext';
 import Myorder from './Myorder';
 
 function OrderForm() {
-    const { cartItem } = useContext(CartContext);
+    const { cartItem, totalPrice } = useContext(CartContext);
+    const deliv = 10.00;
+    // const {Price} = totalPrice;
     
     
+
+    
+    
+   
     
    
  
@@ -56,7 +62,7 @@ function OrderForm() {
                             <p>Delivery</p>
                         </div>
                         <div className="totalamount">
-                            <p className="dolar">$ 10.00</p>
+                            <p className="dolar">$ {deliv}</p>
                         </div>
                     </div>
                     <hr/>
