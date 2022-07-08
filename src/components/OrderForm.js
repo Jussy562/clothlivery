@@ -71,7 +71,7 @@ function OrderForm() {
                             <h6>TOTAL</h6>
                         </div>
                         <div className="totalamount">
-                            <p className="dolar tPrice">$</p><p className="tPrice">0.00</p>
+                            <p className="dolar tPrice">$</p><p className="tPrice">{ totalPrice }</p>
                         </div>
                     </div>
                     <div className="Orderbtn">

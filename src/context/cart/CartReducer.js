@@ -14,8 +14,9 @@ const CartReducer = (state, action) => {
                 ...state,
                 cartItem: [...state.cartItem, action.payload],
                 totalPrice: state.totalPrice + action.payload.price,
+                
             };
-            
+         
           
         }
         case DELETE_ITEM: {
@@ -29,6 +30,7 @@ const CartReducer = (state, action) => {
         }
 
         case INCREMENT: {
+
             // const qtyy = state.cartItem.find(item => item.id === action.payload.id );
             
             
@@ -50,10 +52,14 @@ const CartReducer = (state, action) => {
                 cartItem:  state.cartItem.map(items => items.id === action.id ? 
                     {...items,
                     qty: items.qty + 1,
+                    
                      
                     } : items),
-                     
+                    
+                    
               } : state;
+              
+              
 
               
               
